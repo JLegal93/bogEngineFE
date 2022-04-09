@@ -47,4 +47,25 @@ $(function () {
     var quill = new Quill('#ta-post', {
         theme: 'snow'
     });
+    //"":4,"":"Probando1","":"Probando1","author":"yulissa","":"2020-04-07T00:00:00",
+    $.ajax(
+        {
+            type: 'GET',
+            url:'/Home/GetPosts',
+            success: function (data) {
+                data.data.forEach(function (e) {
+                    $('#tb-posts').append(
+                        '<tr class="table-success">'+
+                        '<td>' + e.status + '</td>' +
+                        '<td>' + e.title + '</td>' +
+                        '<td>' + (e.content || ' ').substring(0, 10) + '</td>' +
+                        '<td>' + e.amountComment + '</td>' +
+                        '<td>' + e.datePosts + '</td>' +
+                        '</tr>'
+
+                    );
+                });
+                
+            }
+        });
 });

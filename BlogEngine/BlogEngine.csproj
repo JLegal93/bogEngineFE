@@ -10,4 +10,14 @@
     <None Include="wwwroot\content\avatar.jpg" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Blog.Engine.Base">
+      <HintPath>..\..\Blog.Engine.Base\Blog.Engine.Base\Blog.Engine.Base\bin\Debug\Blog.Engine.Base.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

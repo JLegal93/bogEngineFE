@@ -17,6 +17,10 @@ namespace BlogEngine.Controllers
         {
             return View();
         }
+        public IActionResult GetPosts()
+        {
+            return Ok(BlogEngineServiceClient.Get().Result);
+        }
 
         public IActionResult Privacy()
         {
