@@ -1,0 +1,58 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="row">
+    <div class="col-6">
+        <div class="pb-2">
+            <div class="p-3 mb-2 bg-dark text-white">quick post</div>
+            <div id="ta-post"></div>
+        </div>
+        <button class=" btn btn-secondary me-3">save for later</button>
+        <button class=" btn btn-primary">publish</button>
+    </div>
+    <div class="col-6">
+        <div class="p-3 mb-2 bg-dark text-white">notifications</div>
+          <div class="toast show">
+            <div class="toast-header">
+                You have new comments!!
+            <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+            </div>
+            <div class="toast-body">
+                There are new comments on your posts!
+            </div>
+          </div>
+    </div>
+</div>
+<div class="row">
+    <div classs="col-12">
+        <div class="pt-4">
+           <div class="p-3 mb-2 bg-dark text-white">recent posts</div>
+           <table class="table">
+            <thead>
+              <tr>
+                <th>Autor</th>
+                <th>Subject</th>
+                <th>Likes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Default</td>
+                <td>Defaultson</td>
+                <td>5</td>
+              </tr>      
+              <tr class="table-primary">
+                <td>Primary</td>
+                <td>Joe</td>
+                <td>8</td>
+              </tr>
+              <tr class="table-success">
+                <td>Success</td>
+                <td>Doe</td>
+                <td>10</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+    </div>
+</div>
